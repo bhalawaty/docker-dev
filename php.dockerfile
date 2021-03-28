@@ -1,8 +1,5 @@
 FROM php:7.2-fpm
 
-# Copy composer.lock and composer.json
-COPY code/composer.lock* code/composer.json* /var/www/
-
 # Set working directory
 WORKDIR /var/www
 
@@ -29,10 +26,6 @@ RUN pecl install -o -f redis \
     &&  rm -rf /tmp/pear \
     &&  docker-php-ext-enable redis
 
-# NPM for frontend builds
-RUN apt install nodejs npm -y
-
-
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -42,7 +35,7 @@ RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy existing application directory contents
-COPY ./code /var/www
+COPY ./src /var/www
 
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www

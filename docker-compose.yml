@@ -23,7 +23,7 @@ services:
     container_name: mysql
     restart: unless-stopped
     ports:
-      - 3306:3306
+      - 4306:3306
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
@@ -61,11 +61,10 @@ services:
       dockerfile: php.dockerfile
     container_name: artisan
     volumes:
-      - ./src:/var/www:delegated
+      - ./src:/var/www
     depends_on:
       - mysql
     working_dir: /var/www
-    user: laravel
     entrypoint: ['php', '/var/www/artisan']
     networks:
       - laravel
@@ -81,5 +80,15 @@ services:
     environment:
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: secret
+    networks:
+      - laravel
+
+  npm:
+    image: node:13.7
+    container_name: npm
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ['npm']
     networks:
       - laravel
