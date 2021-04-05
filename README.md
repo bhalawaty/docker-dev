@@ -17,3 +17,16 @@ $ docker-compose up -d
 $ docker-compose exec webserver php artisan migrate
 $ docker-compose exec webserver php artisan db:seed
 ````
+
+### Another way to run artisan,composer and npm commands
+##### after you run below line now you can write your commands as you like
+````
+$ docker-compose exec webserver bash
+````
+##### Examples :-
+````
+/var/www# npm install
+/var/www# composer install
+/var/www# php artisan optimize
+
+````

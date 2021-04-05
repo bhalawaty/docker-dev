@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c8aca86-b272-44bf-85dc-75a11941bc3f" name="Default Changelist" comment="" />
+    <list default="true" id="1c8aca86-b272-44bf-85dc-75a11941bc3f" name="Default Changelist" comment="fix issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,23 +13,34 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1oFRkzatUtIt34H7MQSGImCl7Me" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/mysql" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -38,16 +52,58 @@
       <option name="presentableId" value="Default" />
       <updated>1612880498636</updated>
       <workItem from="1612880499794" duration="2030000" />
+      <workItem from="1617460230899" duration="18399000" />
     </task>
+    <task id="LOCAL-00001" summary="fix issues">
+      <created>1617578276747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617578276747</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add composer and npm in Dockerfile">
+      <created>1617621807453</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617621807453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix issues" />
+    <MESSAGE value="add composer and npm in Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add composer and npm in Dockerfile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612880546382">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="425" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1612880546382" />
+    <state x="297" y="39" key="CommitChangelistDialog2" timestamp="1617621807318">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="297" y="39" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1617621807318" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1617574540681">
+      <screen x="0" y="22" width="1440" height="813" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1617532610292" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.22.1440.813@0.22.1440.813" timestamp="1617574540681" />
+    <state x="516" y="159" key="RollbackChangesDialog" timestamp="1617621765223">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="516" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1617621765223" />
+    <state x="535" y="154" key="VCS.ChangeListViewerDialog" timestamp="1617574462243">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="535" y="154" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1617574462243" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1617621824932">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1617621824932" />
   </component>
 </project>
