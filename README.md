@@ -30,3 +30,7 @@ $ docker-compose exec webserver bash
 /var/www# php artisan optimize
 
 ````
+### How to import database using command line
+````
+sudo docker exec -i dockerDev-db mysql -u homestead -psecret  databaseName < database.sql
+````
