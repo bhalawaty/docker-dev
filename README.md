@@ -1,3 +1,12 @@
+### Files Structure
+````
+-nginx
+-src (your project)
+-Dockerfile
+-docker-compose.yml
+````
+
+
 ### Ports
 ````
 nginx - :8080
